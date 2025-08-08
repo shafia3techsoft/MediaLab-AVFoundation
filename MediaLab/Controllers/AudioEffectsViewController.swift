@@ -51,11 +51,6 @@ class AudioEffectsViewController: UIViewController, UIDocumentPickerDelegate {
         statusLabel.textAlignment = .center
         statusLabel.numberOfLines = 0
 
-//        let stack = UIStackView(arrangedSubviews: [selectAudioButton, playButton, UILabel(text: "Pitch"), pitchSlider, UILabel(text: "Reverb"), reverbSlider, statusLabel])
-//        stack.axis = .vertical
-//        stack.spacing = 16
-//        stack.translatesAutoresizingMaskIntoConstraints = false
-//        view.addSubview(stack)
         
         let pitchLabel = UILabel()
         pitchLabel.text = "Pitch"

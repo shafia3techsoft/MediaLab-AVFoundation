@@ -12,34 +12,6 @@ class CameraController: NSObject {
     var captureSession: AVCaptureSession?
     var movieOutput = AVCaptureMovieFileOutput()
     var previewLayer: AVCaptureVideoPreviewLayer?
-
-//    func setupCamera(in view: UIView) {
-//        captureSession = AVCaptureSession()
-//        captureSession?.sessionPreset = .high
-//
-//        guard let camera = AVCaptureDevice.default(for: .video),
-//              let mic = AVCaptureDevice.default(for: .audio),
-//              let videoInput = try? AVCaptureDeviceInput(device: camera),
-//              let audioInput = try? AVCaptureDeviceInput(device: mic),
-//              captureSession?.canAddInput(videoInput) == true,
-//              captureSession?.canAddInput(audioInput) == true else {
-//            return
-//        }
-//
-//        captureSession?.addInput(videoInput)
-//        captureSession?.addInput(audioInput)
-//
-//        if captureSession?.canAddOutput(movieOutput) == true {
-//            captureSession?.addOutput(movieOutput)
-//        }
-//
-//        previewLayer = AVCaptureVideoPreviewLayer(session: captureSession!)
-//        previewLayer?.videoGravity = .resizeAspectFill
-//        previewLayer?.frame = view.bounds
-//        view.layer.addSublayer(previewLayer!)
-//
-//        captureSession?.startRunning()
-//    }
     
     func setupCamera(in view: UIView) {
         captureSession = AVCaptureSession()
